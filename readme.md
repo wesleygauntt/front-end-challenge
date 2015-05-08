@@ -32,9 +32,8 @@ For bonus points, throw in some of these:
 Please follow these directions precisely because they affect our ability to evaluate your results.
 
 1. Fork this repo
-2. In your forked repo, create a new branch in git with your name (ie. tim-cull)
-3. Do your coding challenge and push to your forked repo
-4. Email a link to your repo to tim.cull@touchofmodern.com and the recruiter you were working with (i.e. Sally or Tarveen) to let us know you're ready.
+2. Do your coding challenge and push to your forked repo
+3. Email a link to your repo to tim.cull@touchofmodern.com and the recruiter you were working with (i.e. Sally or Tarveen) to let us know you're ready.
 
 ## What we are looking for
 We are looking for several things with this challenge.  First, of course, we're looking for your answer to be technically correct. Beyond that, we're also looking for:
