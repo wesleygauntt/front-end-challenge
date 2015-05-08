@@ -10,7 +10,7 @@ Here you are given an HTML, JSON, javascript and css file that pull data from th
 
 <img src="http://careers.touchofmodern.com/img/front-end-challenge-screenshot.png"/>  
 
-## Task to complete
+## Tasks to complete
 
 Please complete the following tasks:
 
@@ -47,6 +47,7 @@ We are looking for several things with this challenge.  First, of course, we're 
 Basically, write the code as if you were going to release it to a real website with an actual warehouse and if you mess it up then boxes will start piling up on the floor and stuff.  Because that's what happened to us.
 
 When we get your response, here's exactly what we're going to do:
+
 1. Clone your forked code to a laptop and run it through a local Apache server.
 2. Look at the code itself to see its correctness, readability, and general elegance.
 3. Simulate a mobile browser in our browser.
