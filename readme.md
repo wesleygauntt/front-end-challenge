@@ -1,23 +1,56 @@
-Front-End Challenge
-====================
+# Front-End Challenge
 
 This challenge is designed to let you show your thought process and approach to some basic tasks of front-end engineering. There are many ways to perform these tasks and we are not looking for a particular "right way". However, we do appreciate some basic principles of software design including performance, maintainability, usability, etc... 
 
-Along with these tasks, we welcome any commentary or feedback. It can either be included in comments in your code or as a narrative. You are welcome to use any external libraries that you wish. Your deliverable can either be a zip, a repo on your git account, or hosted somewhere. 
+Along with these tasks, we welcome any commentary or feedback. It can either be included in comments in your code or as a narrative. 
 
-Here you are given and HTML, JSON, javascript and css file that pill data from the JSON file and display it for the user to see. Start by familiarizing yourself with the code and once you are ready, here is a list of tasks we will need you to complete:
+Please refrain from using external libraries other than jQuery and Bootstrap.  We'd like to see how well you code, not how well you can hammer together a bunch of libraries. 
+
+Here you are given an HTML, JSON, javascript and css file that pull data from the JSON file and display it for the user to see. In order to work, this challenge must be hosted on a web server of some kind, because the Javascript code does make some AJAX calls.  We've found MAMP to be an easy and convenient way to do this, if you don't already have a favorite way.  If you have it set up correctly, you should see something like this screenshot when you navigate to index.html:
+
+<img src="http://careers.touchofmodern.com/img/front-end-challenge-screenshot.png"/>  
+
+## Task to complete
+
+Please complete the following tasks:
+
+1. Each product has an attribute named "description". We'd like to update the UI so that whenever you mousover a product, an overlay comes across it with the description. 
+2. Make this page responsive, so when it's viewed on a mobile device there's no left-right scrolling and it still looks ok visually (i.e. it's easy to read) 
+3. Add an "X" in the top right corner of each product. When you click on it, have it remove itself from the page. 
+4. Perform a few style edits: link colors should be #0096ff, The title of the page should be 36 pixels high. The tagline of the page should be 18. Title of each product should be 16 pixels high. The product tagline should be 16. Center everything on the page including titles and the products display. 
+5. It takes a second or two to load the page. Let the user know that the page is still loading until the page renders.
+
+For bonus points, throw in some of these:
+
+1. Use some kind of transition when removing a product from the page via the "X"
+2. Optimize and improve the code and layout where you see fit (and tell us how and why you did)
+3. Give any thoughts or commentary on your solution.  What things would you optimize?  If you could use libraries, what libraries would you use?
 
 
-* Familiarize yourself and optimize and improve the code and layout anywhere you see fit. 
+## How to submit your results
 
-* Each product has an attribute named "description". We'd like to update the UI so that whenever you mousover a product, an overlay comes across it with the description. 
+Please follow these directions precisely because they affect our ability to evaluate your results.
 
-* When viewed on a mobile device, the site scrolls left to right. Optimize the layout so that it can be properly viewed on mobile. 
+1. Fork this repo
+2. In your forked repo, create a new branch in git with your name (ie. tim-cull)
+3. Do your coding challenge and push to your forked repo
+4. Email a link to your repo to tim.cull@touchofmodern.com and the recruiter you were working with (i.e. Sally or Tarveen) to let us know you're ready.
 
-* Add an "X" in the top right corner of each product. When you click on it, have it remove itself from the page. 
+## What we are looking for
+We are looking for several things with this challenge.  First, of course, we're looking for your answer to be technically correct. Beyond that, we're also looking for:
 
-* Perform a few style edits: link colors should be #0096ff, The title of the page should be 36 pixels high. The tagline of the page should be 18. Title of each product should be 16 pixels high. The product tagline should be 16. Center everything on the page including titles and the products display. 
+1. Is your code easy to read and understand?
+2. Are you following the usual conventions for front end web development?
+3. In addition to being technically elegant, are your solutions visually elegant?
+4. Did you follow these directions?
 
-* It takes a second or two to load the page. Let the user know that the page is still loading until the page renders.
+Basically, write the code as if you were going to release it to a real website with an actual warehouse and if you mess it up then boxes will start piling up on the floor and stuff.  Because that's what happened to us.
 
-* Give any thoughts or commentary on the solution here. What things did you/would you do to optimize it. Are there any outside libraries you would use? 
+When we get your response, here's exactly what we're going to do:
+1. Clone your forked code to a laptop and run it through a local Apache server.
+2. Look at the code itself to see its correctness, readability, and general elegance.
+3. Simulate a mobile browser in our browser.
+4. Click and scroll around to see how things work.
+
+That's it.  There aren't any hidden gotchas or trick questions.  That's really what we're going to do.
+
