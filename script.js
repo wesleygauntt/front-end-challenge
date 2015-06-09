@@ -50,5 +50,5 @@ function productobj(product, i){
 
 var page=new domobj();
 page.getproducts('data.json');
-setTimeout("console.log('building html');page.updateproducthtml();",500);
-setTimeout("page.updatedom()",1000)
+setTimeout("console.log('building html');page.updateproducthtml();",20);
+setTimeout("page.updatedom()",50)
