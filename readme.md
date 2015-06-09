@@ -22,9 +22,10 @@ Please complete the following tasks:
 
 For bonus points, throw in some of these:
 
-1. Use some kind of transition when removing a product from the page via the "X"
-2. Optimize and improve the code and layout where you see fit (and tell us how and why you did)
-3. Give any thoughts or commentary on your solution.  What things would you optimize?  If you could use libraries, what libraries would you use?
+1. The way we load products is buggy and suboptimal.  Try refactoring it to work better and tell us why you did what you did.
+2. Use some kind of transition when removing a product from the page via the "X"
+3. Optimize and improve the code and layout where you see fit (and tell us how and why you did)
+4. Give any thoughts or commentary on your solution.  What things would you optimize?  If you could use libraries, what libraries would you use?
 
 
 ## How to submit your results
