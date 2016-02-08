@@ -15,7 +15,7 @@ Here you are given an HTML, JSON, javascript and css file that pull data from th
 Please complete the following tasks:
 
 1. In addition to its title and tagline, each product has an attribute named "description". We'd like to update the UI so that whenever you mouseover a product, an overlay comes across it with the description. 
-2. Make this page responsive, so when it's viewed on a mobile device there's no left-right scrolling and it still looks ok visually (i.e. it's easy to read) 
+2. Convert the page to use Bootstrap to make it responsive, so when it's viewed on a mobile device there's no left-right scrolling and it still looks ok visually (i.e. it's easy to read) 
 3. Add an "X" in the top right corner of each product. When you click on it, have it remove itself from the page. 
 4. Perform a few style edits: link colors should be #0096ff, The title of the page should be 36 pixels high. The tagline of the page should be 18. Title of each product should be 16 pixels high. The product tagline should be 16. Center everything on the page including titles and the products display. 
 5. The way we load products is buggy and suboptimal.  Try refactoring it to work better and tell us why you did what you did.
