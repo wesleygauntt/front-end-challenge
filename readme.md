@@ -18,11 +18,11 @@ Please complete the following tasks:
 2. Make this page responsive, so when it's viewed on a mobile device there's no left-right scrolling and it still looks ok visually (i.e. it's easy to read) 
 3. Add an "X" in the top right corner of each product. When you click on it, have it remove itself from the page. 
 4. Perform a few style edits: link colors should be #0096ff, The title of the page should be 36 pixels high. The tagline of the page should be 18. Title of each product should be 16 pixels high. The product tagline should be 16. Center everything on the page including titles and the products display. 
-5. It takes a second or two to load the page. Let the user know that the page is still loading until the page renders.
+5. The way we load products is buggy and suboptimal.  Try refactoring it to work better and tell us why you did what you did.
 
 For bonus points, throw in some of these:
 
-1. The way we load products is buggy and suboptimal.  Try refactoring it to work better and tell us why you did what you did.
+1. It takes a second or two to load the page. Let the user know that the page is still loading until the page renders.
 2. Use some kind of transition when removing a product from the page via the "X"
 3. Optimize and improve the code and layout where you see fit (and tell us how and why you did)
 4. Give any thoughts or commentary on your solution.  What things would you optimize?  If you could use libraries, what libraries would you use?
