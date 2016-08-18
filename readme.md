@@ -34,7 +34,7 @@ Please follow these directions precisely because they affect our ability to eval
 
 1. Fork this repo
 2. Do your coding challenge and push to your forked repo
-3. Email a link to your repo to tim.cull@touchofmodern.com and the recruiter you were working with (i.e. Sally or Tarveen) to let us know you're ready.
+3. Email a link to your repo to steven@touchofmodern.com and the recruiter you were working with (i.e. Sally or Tarveen) to let us know you're ready.
 
 ## What we are looking for
 We are looking for several things with this challenge.  First, of course, we're looking for your answer to be technically correct. Beyond that, we're also looking for:
