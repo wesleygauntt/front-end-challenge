@@ -19,22 +19,6 @@ a {
 	height: auto;
 }
 
-.row {
-	width: 946px;
-}
-
-.col1 {
-	float: left;
-}
-
-.col2 {
-	margin: 10px auto;
-}
-
-.col3 {
-	float: right;
-}
-
 .title {
 	font-size: 20px;
 }
@@ -47,6 +31,7 @@ a {
 	height: 100%;
 	width: 100%;
 	top: 0;
+	left: 0;
 	color: white;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.6);
@@ -56,4 +41,33 @@ a {
 
 .product-container .product-overlay p {
 	margin: 10%;
+}
+
+/* 
+	Classes to center Bootstrap columns
+	Resource used: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns;
+*/
+
+/* centered columns styles */
+.row-centered {
+    text-align: center;
+}
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+/* On extremely small devices, shrink product width to accomodate a lesser window width */
+@media(max-width: 300px){
+	.product-container {
+		width: 150px;
+		border: 1px solid #aaa;
+		margin: 10px;
+		display: inline-block;
+		position:  relative;
+	}
 }

@@ -21,9 +21,16 @@ function domobj(){
     var i=0
     thishtml='';
     for( i=0; i< self.products.length ; i++){
-      if (i % 3 == 0 ){  thishtml += "<div class='row'>"; console.log("START") }
+      /*
+        Task: Convert the page to use Bootstrap to make it responsive, 
+        so when it's viewed on a mobile device there's no left-right scrolling and 
+        it still looks ok visually (i.e. it's easy to read)
+
+        Solution: Used Bootstrap grid system to create a responsive design.
+        Removed column logic and classes for a simpler solution. See product-template.html
+        to view bootstrap column updates.
+      */
       thishtml += self.products[i].htmlview;
-      if ((i % 3 == 2) || i == (self.products.length-1) ){thishtml += "</div>";console.log("FINISH")}
     }
     $("#content").append(thishtml)
 
