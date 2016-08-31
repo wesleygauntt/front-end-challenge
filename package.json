@@ -1,0 +1,21 @@
+{
+  "name": "front-end-challenge",
+  "version": "1.0.0",
+  "description": "A front end engineering challenge as a part of the Touch of Modern application process.",
+  "author": "Wesley Gauntt <wesleygauntt92@gmail.com>",
+  "contributors": [
+    {
+      "name": "Welsey Gauntt",
+      "email": "wesleygauntt92@gmail.com"
+    }
+  ],
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wesleygauntt/front-end-challenge"
+  },
+  "dependencies": {
+    "ejs": "^2.5.1",
+    "express": "^4.14.0"
+  }
+}
