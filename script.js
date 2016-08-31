@@ -126,7 +126,7 @@ function listenForProductRemove(){
 function clearLoader(time){
   setTimeout(function(){
     $('#loader').fadeOut();
-    
+
     setTimeout(function(){
       $('#content').fadeIn();
     }, 500)
@@ -138,4 +138,3 @@ var page=new domobj();
 page.getproducts('/products', function(){
   setTimeout("console.log('building html'); page.updateproducthtml();",20);
 });
-
