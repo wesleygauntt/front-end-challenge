@@ -2,6 +2,7 @@
 function domobj(){
   var self        =this;
   self.products   = [];
+  self.simulatedTimeout = 3000;
 
   /*
     Task: The way we load products is buggy and suboptimal. Try refactoring it 
@@ -57,6 +58,8 @@ function domobj(){
     listenForProductHover();
     //Listener function to accomodate client side rendering of products to remove products.
     listenForProductRemove();
+    //After dom has been built, remove our loading icon.
+    clearLoader(self.simulatedTimeout)
   }
   
 }
@@ -105,6 +108,22 @@ function listenForProductRemove(){
   $('.remove-product').on('click', function(){
     $(this).parent().parent().remove();
   })
+}
+
+
+/*
+  Bonus: It takes a second or two to load the page. 
+  Let the user know that the page is still loading until the page renders.
+
+  Solution: Use a simulated timeout (defined as domobj.simulatedTimeout) to 
+  preview what laoding might look like after DOM has loaded, and timeout and reached time
+  out loader will fade out, and out content will fade in.
+*/
+function clearLoader(time){
+  setTimeout(function(){
+    $('#loader').fadeOut();
+    $('#content').fadeIn();
+  }, time)
 }
 
 var page=new domobj();

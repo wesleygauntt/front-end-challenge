@@ -24,6 +24,10 @@ a {
 	color: #0096ff;
 }
 
+#content {
+	display: none;
+}
+
 .title {
 	font-size: 36px;
 }
@@ -75,6 +79,17 @@ a {
     font-size: 1.7em;
 }
 
+/* On extremely small devices, shrink product width to accomodate a lesser window width */
+@media(max-width: 300px){
+	.product-container {
+		width: 150px;
+		border: 1px solid #aaa;
+		margin: 10px;
+		display: inline-block;
+		position:  relative;
+	}
+}
+
 /* 
 	Classes to center Bootstrap columns
 	Resource used: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns;
@@ -93,13 +108,25 @@ a {
     margin-right: -4px;
 }
 
-/* On extremely small devices, shrink product width to accomodate a lesser window width */
-@media(max-width: 300px){
-	.product-container {
-		width: 150px;
-		border: 1px solid #aaa;
-		margin: 10px;
-		display: inline-block;
-		position:  relative;
-	}
+/* 
+	Pulsing animation for Loading 
+	Resource: http://stackoverflow.com/questions/20895891/animate-pulsing-effect-using-css3-transform-scale-and-jquery;
+*/
+
+@keyframes pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+#loader h2{
+    animation: pulse 3s linear infinite;
 }
