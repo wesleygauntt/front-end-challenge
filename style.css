@@ -14,9 +14,23 @@
 			Solution: 'body' has text aligned in the center, row-centered and col-centered classes center products.
 */
 
+/*
+	Start General Styles
+*/
 body {
 	font-family: "Arial";
 	text-align: center;
+	background: url(bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Prevents left/right scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -24,6 +38,7 @@ a {
 	color: #0096ff;
 }
 
+/* Content starts as hidden, then fades in with function clearLoader in script.js */
 #content {
 	display: none;
 }
@@ -31,6 +46,7 @@ a {
 .header {
 	background-color: rgba(0, 0, 0, 0.6);
 	color: white;
+	width: 100%;
 }
 
 .title {
@@ -42,6 +58,16 @@ a {
 	margin-bottom: 5%;
 }
 
+.description {
+	padding: 10px;
+}
+/*
+	End General Styles
+*/
+
+/* 
+	Start Product Styles 
+*/
 .product-container .title,  .product-container .tagline{
 	font-size: 16px;
 }
@@ -61,10 +87,6 @@ a {
 .product-container img{
 	width: 100%;
 	height: auto;
-}
-
-.description {
-	padding: 10px;
 }
 
 .product-container .product-overlay {
@@ -89,26 +111,6 @@ a {
     font-size: 1.7em;
 }
 
-body { 
-  background: url(bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-/* Resize loader for smaller devices */
-@media(max-width: 500px){
-	#loader img{
-		width: 150px;
-		/*border: 1px solid #aaa;*/
-		/*margin: 10px;*/
-		/*display: inline-block;*/
-		/*position:  relative;*/
-	}
-}
-
 /* On extremely small devices, shrink product width to accomodate a lesser window width */
 @media(max-width: 300px){
 	.product-container {
@@ -121,7 +123,11 @@ body {
 }
 
 /* 
-	Classes to center Bootstrap columns
+	End Product Styles 
+*/
+
+/* 
+	Start Classes to center Bootstrap columns
 	Resource used: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns;
 */
 
@@ -134,9 +140,15 @@ body {
     float: none;
     /* reset the text-align */
     text-align: left;
-    /* inline-block space fix */
-    margin-right: -4px;
 }
+/*
+	End Classes to center Bootstrap columns
+*/
+
+
+/* 
+	Start Loader Styles 
+*/
 
 /* 
 	Pulsing animation for Loading 
@@ -163,6 +175,14 @@ body {
     margin-left: 30%;
 }
 
+#loader img{
+	width: 100% !important;
+}
+
 #loader h2{
     animation: pulse 3s linear infinite;
 }
+
+/* 
+	End Loader Styles 
+*/
