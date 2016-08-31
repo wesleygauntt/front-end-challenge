@@ -28,12 +28,18 @@ a {
 	display: none;
 }
 
+.header {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
 .title {
 	font-size: 36px;
 }
 
 .tagline {
-	font-size: 18px;	
+	font-size: 18px;
+	margin-bottom: 5%;
 }
 
 .product-container .title,  .product-container .tagline{
@@ -46,6 +52,10 @@ a {
 	margin: 10px;
 	display: inline-block;
 	position:  relative;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: rgba(255, 255, 255, 0.95);
+	box-shadow: 3px 3px 3px black;
 }
 
 .product-container img{
@@ -77,6 +87,26 @@ a {
 	margin-top: 5%;
 	margin-left: 87.5%;
     font-size: 1.7em;
+}
+
+body { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* Resize loader for smaller devices */
+@media(max-width: 500px){
+	#loader img{
+		width: 150px;
+		/*border: 1px solid #aaa;*/
+		/*margin: 10px;*/
+		/*display: inline-block;*/
+		/*position:  relative;*/
+	}
 }
 
 /* On extremely small devices, shrink product width to accomodate a lesser window width */
@@ -125,6 +155,12 @@ a {
     100% {
     transform: scale(1, 1);
     }
+}
+
+#loader{
+    background-color: white;
+    width: 40%;
+    margin-left: 30%;
 }
 
 #loader h2{

@@ -66,14 +66,14 @@ function domobj(){
 
 function productobj(product, i){
   var self = this;
-  self.photo        = product.photos.medium_half
-  self.title        = product.name
-  self.tagline      = product.tagline
-  self.url          = product.url
-  self.htmlview     = ""
-  self.index        = i
-  self.custom_class = "col"+ ((i % 3) +1)
-  self.description  = product.description;
+  self.photo        = product.photos.medium_half;
+  self.title        = product.name;
+  self.tagline      = product.tagline;
+  self.url          = product.url;
+  self.htmlview     = "";
+  self.index        = i;
+  self.custom_class = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
+  self.description  = product.description;;
   
   self.updatehtml= function(template){
     self.htmlview = template.replace('{image}', self.photo)
@@ -115,7 +115,6 @@ function listenForProductRemove(){
   })
 }
 
-
 /*
   Bonus: It takes a second or two to load the page. 
   Let the user know that the page is still loading until the page renders.
@@ -127,7 +126,11 @@ function listenForProductRemove(){
 function clearLoader(time){
   setTimeout(function(){
     $('#loader').fadeOut();
-    $('#content').fadeIn();
+    
+    setTimeout(function(){
+      $('#content').fadeIn();
+    }, 500)
+    
   }, time)
 }
 
