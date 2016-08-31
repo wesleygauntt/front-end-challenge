@@ -43,19 +43,19 @@ app.listen(port, function() {
 	Answer:
 		I think that this is a great challenge. Typically, coding challenges have you build something
 	from scratch. That's great, but it's not terribly likely in a real-world scenario (when joining a 
-	team) that you will be build the application fromt the ground up. Moreoften than not, you'll find 
+	team) that you will be building the application from the ground up. Moreoften than not, you'll find 
 	yourself working on an existing project. This challenge exemplifies that -- jumping into existing 
-	code and making chages accordingly.
+	code and making changes accordingly.
 
-		If I were to optimize this my solution with the use of a library, I would hands down use ejs
-	(embedded JavaScript) templating. It effectivly eliminates functions such as productobj.updatehtml, 
+		If I were to optimize this solution with the use of a library, I would hands down use ejs
+	(embedded JavaScript) templating. It effectively eliminates functions such as productobj.updatehtml, 
 	and uses basic Javascript to perform the same functionality with more clarity and less coding. 
 	Additionally, there were spots that could have been broken out into separate folders for a more clear
-	directory flow (for example, breaking out the routes into their own folder), but for a project/exmaple
-	of this size, it is probably more hassle than it's worth. I did take some personal liberties as far 
-	as additional styling goes, while being careful to include all instructions that were detailed in the 
-	readme. I do hope that this does not count against me, but am honestly please with the final result. 
-	I'm no designer, but I took being 'visually elegant' to heart!
+	file structure (for example, breaking out the routes into their own folder), but for a project of this 
+	size, it is probably more hassle than it's worth. I did take some personal liberties as far as additional 
+	styling goes, while being careful to include all instructions that were detailed in the readme. I do hope 
+	that this does not count against me, but am honestly pleased with the final result. I'm no designer, but 
+	I took being 'visually elegant' to heart!
 
 		Lastly, as an overall review -- this challenge has helped me become a better developer. Each time
 	a developer jumps into another's code, it can bring light to new methods and strategies to achieve the
