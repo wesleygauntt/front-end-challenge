@@ -1,9 +1,39 @@
+/*
+	Task: Perform a few style edits: 
+		link colors should be #0096ff,
+			Solution: 'a' selector has it's color set to specification.
+		The title of the page should be 36 pixels high. 
+			Solution: 'title' class has a font size of 36.
+		The tagline of the page should be 18.
+			Solution: 'tagline' class has a font size of 18.
+		Title of each product should be 16 pixels high. 
+			Solution: '.product-container .title' class has a font size of 16.
+		The product tagline should be 16. 
+			Solution: '.product-container .tagline' class has a font size of 16.
+		Center everything on the page including titles and the products display.
+			Solution: 'body' has text aligned in the center, row-centered and col-centered classes center products.
+*/
+
 body {
-	font-family: "Arial"
+	font-family: "Arial";
+	text-align: center;
 }
 
 a {
 	text-decoration: none;
+	color: #0096ff;
+}
+
+.title {
+	font-size: 36px;
+}
+
+.tagline {
+	font-size: 18px;	
+}
+
+.product-container .title,  .product-container .tagline{
+	font-size: 16px;
 }
 
 .product-container {
@@ -17,10 +47,6 @@ a {
 .product-container img{
 	width: 100%;
 	height: auto;
-}
-
-.title {
-	font-size: 20px;
 }
 
 .description {
