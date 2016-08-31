@@ -3,18 +3,37 @@ function domobj(){
   var self        =this;
   self.products   = [];
 
-  self.getproducts = function(url){
+  /*
+    Task: The way we load products is buggy and suboptimal. Try refactoring it 
+    to work better and tell us why you did what you did.
+
+    Solution: This was a multipart solution. The first step was to create a callback
+    parameter that would get called once we were done getting our products in 'getproducts'.
+    The second half of the solution came from editing updateproducthtml. This function was 
+    ammended to work with a chain of promises. We start by getting the product template (this
+    was changed from being called for every iteration in the updatehtml loop), then use that
+    template to get the product html. Once the loop is complete, we continue the chain to finally
+    update our dom.
+  */
+
+  self.getproducts = function(url, callback){
     $.getJSON(url, function(response){
         for(i=0; i<response.sales.length ; i++){
           self.products.push( new productobj(response.sales[i], i)  );
         }
+        callback();
     });
   }
     
   self.updateproducthtml = function(){
-    for( i=0; i< self.products.length ; i++){
-      self.products[i].updatehtml();
-    }
+    $.get('product-template.html').then(function(template){
+      for( i=0; i< self.products.length ; i++){
+        self.products[i].updatehtml(template);
+      }
+    }).then(function(){
+      self.updatedom();
+    })
+
   }
   
   self.updatedom = function(){
@@ -53,15 +72,13 @@ function productobj(product, i){
   self.custom_class = "col"+ ((i % 3) +1)
   self.description  = product.description;
   
-  self.updatehtml= function(){
-    $.get('product-template.html', function(template){
-      self.htmlview = template.replace('{image}', self.photo)
-        .replace('{title}', self.title)
-        .replace('{tagline}', self.tagline)
-        .replace('{url}', self.url)
-        .replace('{custom_class}', self.custom_class)
-        .replace('{description}', self.description);
-    });
+  self.updatehtml= function(template){
+    self.htmlview = template.replace('{image}', self.photo)
+      .replace('{title}', self.title)
+      .replace('{tagline}', self.tagline)
+      .replace('{url}', self.url)
+      .replace('{custom_class}', self.custom_class)
+      .replace('{description}', self.description);
   }
 }
 
@@ -91,7 +108,7 @@ function listenForProductRemove(){
 }
 
 var page=new domobj();
-page.getproducts('data.json');
-setTimeout("console.log('building html');page.updateproducthtml();",20);
-setTimeout("page.updatedom()",50)
+page.getproducts('/products', function(){
+  setTimeout("console.log('building html'); page.updateproducthtml();",20);
+});
 
