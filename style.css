@@ -40,7 +40,13 @@ a {
 }
 
 .product-container .product-overlay p {
-	margin: 10%;
+	margin: 5%;
+}
+
+.remove-product {
+	margin-top: 5%;
+	margin-left: 87.5%;
+    font-size: 1.7em;
 }
 
 /* 

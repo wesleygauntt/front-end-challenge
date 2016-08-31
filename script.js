@@ -34,8 +34,10 @@ function domobj(){
     }
     $("#content").append(thishtml)
 
-    //Listener function to accomodate client side rendering of products.
+    //Listener function to accomodate client side rendering of products to show overlay.
     listenForProductHover();
+    //Listener function to accomodate client side rendering of products to remove products.
+    listenForProductRemove();
   }
   
 }
@@ -74,6 +76,18 @@ function listenForProductHover(){
   }, function(){
     $(this).find(".product-overlay").slideUp();
   });
+}
+
+/*
+  Task: Add an "X" in the top right corner of each product. When you click on it, have it remove itself from the page.
+
+  Solution: Using a glyphicon to represent our X, get it's parent's (overlay) parent (product), and use jQuery's remove method.
+  See product-template.html to check where our remove 'button' (actually a span) was added.
+*/
+function listenForProductRemove(){
+  $('.remove-product').on('click', function(){
+    $(this).parent().parent().remove();
+  })
 }
 
 var page=new domobj();
