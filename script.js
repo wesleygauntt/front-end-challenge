@@ -106,7 +106,12 @@ function listenForProductHover(){
 */
 function listenForProductRemove(){
   $('.remove-product').on('click', function(){
-    $(this).parent().parent().remove();
+    /* 
+      Bonus: Use some kind of transition when removing a product from the page via the "X"
+      
+      Solution: jQuery's fadeOut.
+    */
+    $(this).parent().parent().fadeOut();
   })
 }
 
